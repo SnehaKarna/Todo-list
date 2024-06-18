@@ -1,0 +1,125 @@
+/* TodoForm.css
+.todo-form {
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    width: calc(100% - 100px); 
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .todo-submit {
+    width: 100px; 
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .todo-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-list {
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  .todo-item span {
+    flex: 1; 
+  }
+  
+  .todo-item button {
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .todo-item button:hover {
+    background-color: #c82333; 
+  }
+  
+.todo-item {
+    margin-bottom: 10px; 
+  }
+  
+.todo-item button {
+    margin-right: 10px; 
+  }
+  
+  .todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
+  .todo-input,
+  .deadline-input,
+  .todo-submit {
+    flex: 1; 
+    margin-right: 10px;
+  }
+   */
+
+/* TodoForm.css */
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust alignment */
+}
+
+.todo-input,
+.deadline-input,
+.todo-submit {
+  flex: 1; /* Let the input fields and button grow to occupy remaining space */
+  margin-right: 10px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Add bottom border to separate items */
+}
+
+.todo-item span {
+  flex: 1; /* Allow todo text to grow within the flex container */
+}
+
+.todo-item button {
+  background-color: #dc3545; /* Red color for remove button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.todo-item button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.todo-item.done span {
+  text-decoration: line-through;
+  color: gray;
+}

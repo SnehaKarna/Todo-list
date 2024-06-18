@@ -1,0 +1,133 @@
+.todo-container {
+  width: 100%;
+  min-height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Adjusted padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: Arial, sans-serif;
+  background-image: url('./todobackground.png');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Centered header text */
+h1 {
+  text-align: center;
+}
+
+/* Styling for the text input field */
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the date input field */
+input[type="date"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  width: 20%; /* Adjusted width for better alignment */
+}
+
+/* Styling for the time input field */
+input[type="time"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  width: 20%; /* Adjusted width for better alignment */
+}
+
+/* Styling for buttons */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the unordered list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for the list items */
+li {
+  margin-bottom: 10px;
+}
+
+/* Styling for the to-do items */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for completed to-do items */
+.todo-item.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Styling for the buttons within to-do items */
+.todo-item button {
+  margin-left: 5px; /* Add space between buttons */
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Separate styles for individual buttons */
+.todo-item .done-btn {
+  background-color: #2828a7;
+}
+
+.todo-item .done-btn:hover {
+  background-color: #218838;
+}
+
+.todo-item .edit-btn {
+  background-color: #2828a7;
+}
+
+.todo-item .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.todo-item .remove-btn {
+  background-color: #2828a7;
+}
+
+.todo-item .remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Additional styling for the deadline */
+.todo-item .deadline {
+  margin-right: 10px;
+  flex: 1; /* Let the deadline span take up remaining space */
+}
+
+
+
+
+
+
+
+
